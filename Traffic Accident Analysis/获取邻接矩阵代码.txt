@@ -1,0 +1,9 @@
+import networkx as nx
+import numpy as np
+A=np.array(nx.adjacency_matrix(G).todense())
+
+pandas列名重命名
+1）province.rename(columns={'ID':'id','code':'编码'})
+2）p_col=['省份','id','编码']	province.columns=p_col
+3）p_col=['省份','id','编码']
+province_new=pd.DataFrame(province,columns=p_col)
